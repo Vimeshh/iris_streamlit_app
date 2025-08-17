@@ -1,0 +1,9 @@
+import joblib
+import pickle
+
+# Load joblib model
+model = joblib.load("notebooks/best_iris_model.joblib")
+
+# Save as .pkl
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
